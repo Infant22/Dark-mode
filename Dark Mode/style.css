@@ -1,0 +1,49 @@
+/* Default Light Theme Colors */
+:root {
+    --bg-color: #ffffff;   /* Background color for light mode */
+    --text-color: #000000; /* Text color for light mode */
+    --button-bg: #000000;  /* Button background color for light mode */
+    --button-text: #ffffff;/* Button text color for light mode */
+  }
+  
+  /* Dark Theme Colors */
+  body.dark-mode {
+    --bg-color: #1e1e1e;   /* Background color for dark mode */
+    --text-color: #ffffff; /* Text color for dark mode */
+    --button-bg: #ffffff;  /* Button background color for dark mode */
+    --button-text: #000000;/* Button text color for dark mode */
+  }
+  
+  /* Styling the body */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container Styling */
+  .container {
+    text-align: center;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
